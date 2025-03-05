@@ -1,0 +1,82 @@
+--- 1. Column Spacing and Spelling Inspection ---
+
+--- Column Names with Quotes (Raw) ---
+'EmployeeNumber'
+'Age'
+'Tenure'
+'Turnover'
+'HourlyRate '
+'HoursWeekly'
+'CompensationType'
+'AnnualSalary'
+'DrivingCommuterDistance'
+'JobRoleArea'
+'Gender'
+'MaritalStatus'
+'NumCompaniesPreviouslyWorked'
+'AnnualProfessionalDevHrs'
+'PaycheckMethod'
+'TextMessageOptIn'
+
+
+Warning: Inconsistent spacing in column names. Majority are columns without spaces.
+Possible errored columns are: ['HourlyRate ']
+
+
+Warning: Spelling errors in column names:
+Spelling error in column 'NumCompaniesPreviouslyWorked': 'Num'
+Spelling error in column 'AnnualProfessionalDevHrs': 'Dev'
+
+
+
+--- 2. Missing Values Inspection ---
+
+Missing values per column:
+NumCompaniesPreviouslyWorked     665
+AnnualProfessionalDevHrs        1969
+TextMessageOptIn                2266
+dtype: int64
+
+Percentage of Missing Values per Column:
+NumCompaniesPreviouslyWorked     6.520247
+AnnualProfessionalDevHrs        19.305814
+TextMessageOptIn                22.217864
+dtype: float64
+
+--- 3. Duplicate Entries Inspection ---
+Duplicate rows found. See data_inspection_duplicates.txt for details.
+
+--- 4. Inconsistent Entries Inspection ---
+Duplicate values found in:
+Turnover (normalized).
+CompensationType (normalized).
+JobRoleArea (normalized).
+Gender (normalized).
+MaritalStatus (normalized).
+PaycheckMethod (normalized).
+TextMessageOptIn (normalized).
+
+Duplicate variable names found:
+  Information Technology: ['Information Technology', 'InformationTechnology', 'Information_Technology']
+  Human_Resources: ['Human_Resources', 'HumanResources', 'Human Resources']
+  Mail_Check: ['Mail_Check', 'Mail Check']
+  Mailed Check: ['Mailed Check', 'MailedCheck']
+  DirectDeposit: ['DirectDeposit', 'Direct_Deposit', 'Direct Deposit']
+
+See data_inspection_duplicates.txt for details.
+
+--- 5. Formatting Errors Inspection ---
+Warning: Mixed data types in column 'TextMessageOptIn': [<class 'str'> <class 'float'>]
+Warning: Leading/trailing spaces in column 'HourlyRate '
+Warning: Non alphanumeric characters found in column: 'HourlyRate '
+Warning: Non alphanumeric characters found in column: 'JobRoleArea'
+Warning: Non alphanumeric characters found in column: 'PaycheckMethod'
+Warning: Negative values found in column 'AnnualSalary'
+Warning: Negative values found in column 'DrivingCommuterDistance'
+Warning: Zero values found in column 'DrivingCommuterDistance'
+Warning: Non-numeric characters in column 'NumCompaniesPreviouslyWorked'
+Warning: Non-numeric characters in column 'AnnualProfessionalDevHrs'
+
+--- 6. Outliers Inspection ---
+Outliers found in AnnualSalary. See data_inspection_outliers.txt for details.
+Outliers found in DrivingCommuterDistance. See data_inspection_outliers.txt for details.

@@ -1,0 +1,319 @@
+--- Duplicate Rows (Excluding Specified Columns) ---
+0, 10100:
+1, 28, 6, Yes, $24.37 , 40, Salary, 50689.6, 89, Research, Female, Married, 3.0, 7.0, Mail Check, Yes
+1, 28, 6, Yes, $24.37 , 40, Salary, 50689.6, 89, Research, Female, Married, 3.0, 7.0, Mail Check, Yes
+
+1, 10101:
+2, 33, 2, Yes, $24.37 , 40, Salary, 50689.6, 89, Research, Female, Married, 6.0, 7.0, Mail Check, Yes
+2, 33, 2, Yes, $24.37 , 40, Salary, 50689.6, 89, Research, Female, Married, 6.0, 7.0, Mail Check, Yes
+
+2, 10102:
+3, 22, 1, No, $22.52 , 40, Salary, 46841.6, 35, Information_Technology, Female, Single, 1.0, 8.0, Mailed Check, Yes
+3, 22, 1, No, $22.52 , 40, Salary, 46841.6, 35, Information_Technology, Female, Single, 1.0, 8.0, Mailed Check, Yes
+
+6, 10106:
+7, 34, 6, No, $28.43 , 40, Salary, 59134.4, 0, Human_Resources, Male, Single, 2.0, 23.0, Mail Check, Yes
+7, 34, 6, No, $28.43 , 40, Salary, 59134.4, 0, Human_Resources, Male, Single, 2.0, 23.0, Mail Check, Yes
+
+7, 10107:
+8, 37, 9, Yes, $28.43 , 40, Salary, 59134.4, 0, Human_Resources, Male, Single, 1.0, 25.0, Mail Check, Yes
+8, 37, 9, Yes, $28.43 , 40, Salary, 59134.4, 0, Human_Resources, Male, Single, 1.0, 25.0, Mail Check, Yes
+
+9, 10109:
+10, 24, 1, Yes, $21.87 , 40, Salary, 45489.6, 76, Human_Resources, Female, Single, 2.0, 9.0, Mail Check, Yes
+10, 24, 1, Yes, $21.87 , 40, Salary, 45489.6, 76, Human_Resources, Female, Single, 2.0, 9.0, Mail Check, Yes
+
+10, 10110:
+11, 30, 3, Yes, $29.54 , 40, Salary, 61443.2, 15, Laboratory, Female, Divorced, 3.0, 6.0, Mail Check, Yes
+11, 30, 3, Yes, $29.54 , 40, Salary, 61443.2, 15, Laboratory, Female, Divorced, 3.0, 6.0, Mail Check, Yes
+
+11, 10111:
+12, 34, 8, Yes, $29.54 , 40, Salary, 61443.2, 15, Laboratory, Female, Divorced, 1.0, 6.0, Mail Check, Yes
+12, 34, 8, Yes, $29.54 , 40, Salary, 61443.2, 15, Laboratory, Female, Divorced, 1.0, 6.0, Mail Check, Yes
+
+13, 10113:
+14, 47, 16, Yes, $85.24 , 40, Salary, 177299.2, 2, Research, Male, Single, 5.0, 5.0, Mail Check, Yes
+14, 47, 16, Yes, $85.24 , 40, Salary, 177299.2, 2, Research, Male, Single, 5.0, 5.0, Mail Check, Yes
+
+14, 10114:
+15, 30, 2, Yes, $30.42 , 40, Salary, 63273.6, 36, Information_Technology, Female, Married, 2.0, 6.0, Mailed Check, Yes
+15, 30, 2, Yes, $30.42 , 40, Salary, 63273.6, 36, Information_Technology, Female, Married, 2.0, 6.0, Mailed Check, Yes
+
+15, 10115:
+16, 38, 1, No, $30.42 , 40, Salary, 63273.6, 36, Information_Technology, Female, Married, 3.0, 5.0, Mailed Check, Yes
+16, 38, 1, No, $30.42 , 40, Salary, 63273.6, 36, Information_Technology, Female, Married, 3.0, 5.0, Mailed Check, Yes
+
+16, 10116:
+17, 55, 20, Yes, $88.50 , 40, Salary, 284080.0, 60, Information_Technology, Prefer Not to Answer, Married, 7.0, 9.0, Mail Check, Yes
+17, 55, 20, Yes, $88.50 , 40, Salary, 284080.0, 60, Information_Technology, Prefer Not to Answer, Married, 7.0, 9.0, Mail Check, Yes
+
+19, 10119:
+20, 35, 10, No, $24.30 , 40, Salary, 50544.0, 2, Sales, Female, Married, 5.0, 15.0, Mail Check, Yes
+20, 35, 10, No, $24.30 , 40, Salary, 50544.0, 2, Sales, Female, Married, 5.0, 15.0, Mail Check, Yes
+
+21, 10121:
+22, 37, 7, Yes, $26.28 , 40, Salary, 54662.4, 14, Research, Female, Married, 5.0, 15.0, Direct_Deposit, Yes
+22, 37, 7, Yes, $26.28 , 40, Salary, 54662.4, 14, Research, Female, Married, 5.0, 15.0, Direct_Deposit, Yes
+
+22, 10122:
+23, 44, 9, No, $87.22 , 40, Salary, 281417.6, 75, Manufacturing, Female, Divorced, 2.0, 16.0, Mail Check, Yes
+23, 44, 9, No, $87.22 , 40, Salary, 281417.6, 75, Manufacturing, Female, Divorced, 2.0, 16.0, Mail Check, Yes
+
+23, 10123:
+24, 54, 15, No, $87.22 , 40, Salary, 281417.6, 75, Manufacturing, Female, Divorced, 7.0, 24.0, Mail Check, Yes
+24, 54, 15, No, $87.22 , 40, Salary, 281417.6, 75, Manufacturing, Female, Divorced, 7.0, 24.0, Mail Check, Yes
+
+24, 10124:
+25, 36, 3, Yes, $87.20 , 40, Salary, 281376.0, 5, Research, Female, Married, 1.0, 10.0, DirectDeposit, Yes
+25, 36, 3, Yes, $87.20 , 40, Salary, 281376.0, 5, Research, Female, Married, 1.0, 10.0, DirectDeposit, Yes
+
+26, 10126:
+27, 32, 6, No, $31.02 , 40, Salary, 64521.6, 910, Research, Female, Married, 1.0, 18.0, Mailed Check, Yes
+27, 32, 6, No, $31.02 , 40, Salary, 64521.6, 910, Research, Female, Married, 1.0, 18.0, Mailed Check, Yes
+
+27, 10127:
+28, 32, 5, No, $31.02 , 40, Salary, 64521.6, 910, Research, Female, Married, 2.0, 11.0, Mailed Check, Yes
+28, 32, 5, No, $31.02 , 40, Salary, 64521.6, 910, Research, Female, Married, 2.0, 11.0, Mailed Check, Yes
+
+28, 10128:
+29, 41, 7, No, $89.40 , 40, Salary, 285952.0, 28, Healthcare, Prefer Not to Answer, Single, 6.0, 20.0, Mailed Check, Yes
+29, 41, 7, No, $89.40 , 40, Salary, 285952.0, 28, Healthcare, Prefer Not to Answer, Single, 6.0, 20.0, Mailed Check, Yes
+
+30, 10130:
+31, 30, 1, No, $24.50 , 40, Salary, 50960.0, -4, Human_Resources, Female, Divorced, 3.0, 17.0, Mailed Check, Yes
+31, 30, 1, No, $24.50 , 40, Salary, 50960.0, -4, Human_Resources, Female, Divorced, 3.0, 17.0, Mailed Check, Yes
+
+32, 10132:
+33, 38, 8, No, $88.78 , 40, Salary, 284662.4, 0, Laboratory, Prefer Not to Answer, Divorced, 1.0, 21.0, Mail Check, Yes
+33, 38, 8, No, $88.78 , 40, Salary, 284662.4, 0, Laboratory, Prefer Not to Answer, Divorced, 1.0, 21.0, Mail Check, Yes
+
+33, 10133:
+34, 56, 8, No, $88.78 , 40, Salary, 284662.4, 0, Laboratory, Prefer Not to Answer, Divorced, 3.0, 25.0, Mail Check, Yes
+34, 56, 8, No, $88.78 , 40, Salary, 284662.4, 0, Laboratory, Prefer Not to Answer, Divorced, 3.0, 25.0, Mail Check, Yes
+
+34, 10134:
+35, 28, 4, No, $25.14 , 40, Salary, 52291.2, 910, Laboratory, Female, Married, 2.0, 12.0, Mail Check, Yes
+35, 28, 4, No, $25.14 , 40, Salary, 52291.2, 910, Laboratory, Female, Married, 2.0, 12.0, Mail Check, Yes
+
+35, 10135:
+36, 35, 6, Yes, $25.14 , 40, Salary, 52291.2, 910, Laboratory, Female, Married, 6.0, 7.0, Mail Check, Yes
+36, 35, 6, Yes, $25.14 , 40, Salary, 52291.2, 910, Laboratory, Female, Married, 6.0, 7.0, Mail Check, Yes
+
+37, 10137:
+38, 44, 10, No, $85.44 , 40, Salary, 177715.2, 33, Sales, Female, Single, 7.0, 19.0, Mail Check, Yes
+38, 44, 10, No, $85.44 , 40, Salary, 177715.2, 33, Sales, Female, Single, 7.0, 19.0, Mail Check, Yes
+
+39, 10139:
+40, 37, 9, No, $29.21 , 40, Salary, 60756.8, 79, Laboratory, Female, Divorced, 4.0, 22.0, Direct_Deposit, Yes
+40, 37, 9, No, $29.21 , 40, Salary, 60756.8, 79, Laboratory, Female, Divorced, 4.0, 22.0, Direct_Deposit, Yes
+
+40, 10140:
+41, 30, 1, No, $23.86 , 40, Salary, 49628.8, 50, Marketing, Female, Single, 1.0, 12.0, Mail Check, Yes
+41, 30, 1, No, $23.86 , 40, Salary, 49628.8, 50, Marketing, Female, Single, 1.0, 12.0, Mail Check, Yes
+
+41, 10141:
+42, 30, 8, Yes, $23.86 , 40, Salary, 49628.8, 50, Marketing, Female, Single, 2.0, 21.0, Mail Check, Yes
+42, 30, 8, Yes, $23.86 , 40, Salary, 49628.8, 50, Marketing, Female, Single, 2.0, 21.0, Mail Check, Yes
+
+42, 10142:
+43, 21, 1, Yes, $22.24 , 40, Salary, 5259.2, 13, Research, Female, Single, 3.0, 12.0, Direct_Deposit, Yes
+43, 21, 1, Yes, $22.24 , 40, Salary, 5259.2, 13, Research, Female, Single, 3.0, 12.0, Direct_Deposit, Yes
+
+43, 10143:
+44, 23, 1, Yes, $22.24 , 40, Salary, 5259.2, 13, Research, Female, Married, 2.0, 11.0, Direct_Deposit, Yes
+44, 23, 1, Yes, $22.24 , 40, Salary, 5259.2, 13, Research, Female, Married, 2.0, 11.0, Direct_Deposit, Yes
+
+44, 10144:
+45, 36, 8, No, $84.70 , 40, Salary, 176176.0, 75, Manufacturing, Prefer Not to Answer, Divorced, 6.0, 9.0, Mail Check, Yes
+45, 36, 8, No, $84.70 , 40, Salary, 176176.0, 75, Manufacturing, Prefer Not to Answer, Divorced, 6.0, 9.0, Mail Check, Yes
+
+46, 10146:
+47, 36, 1, Yes, $26.48 , 40, Salary, 55078.4, 57, Sales, Female, Divorced, 6.0, 24.0, Direct_Deposit, Yes
+47, 36, 1, Yes, $26.48 , 40, Salary, 55078.4, 57, Sales, Female, Divorced, 6.0, 24.0, Direct_Deposit, Yes
+
+47, 10147:
+48, 38, 3, Yes, $26.48 , 40, Salary, 55078.4, 57, Sales, Female, Divorced, 1.0, 10.0, Direct_Deposit, Yes
+48, 38, 3, Yes, $26.48 , 40, Salary, 55078.4, 57, Sales, Female, Divorced, 1.0, 10.0, Direct_Deposit, Yes
+
+48, 10148:
+49, 36, 2, Yes, $28.30 , 40, Salary, 58864.0, 82, Sales, Female, Married, 2.0, 24.0, Mail Check, Yes
+49, 36, 2, Yes, $28.30 , 40, Salary, 58864.0, 82, Sales, Female, Married, 2.0, 24.0, Mail Check, Yes
+
+49, 10149:
+50, 40, 8, No, $28.30 , 40, Salary, 58864.0, 82, Sales, Female, Married, 5.0, 14.0, Mail Check, Yes
+50, 40, 8, No, $28.30 , 40, Salary, 58864.0, 82, Sales, Female, Married, 5.0, 14.0, Mail Check, Yes
+
+50, 10150:
+51, 27, 3, Yes, $22.72 , 40, Salary, 47257.6, 4, Information_Technology, Male, Single, 2.0, 5.0, Mail Check, Yes
+51, 27, 3, Yes, $22.72 , 40, Salary, 47257.6, 4, Information_Technology, Male, Single, 2.0, 5.0, Mail Check, Yes
+
+51, 10151:
+52, 32, 3, Yes, $22.72 , 40, Salary, 47257.6, 4, Information_Technology, Male, Single, 3.0, 14.0, Mail Check, Yes
+52, 32, 3, Yes, $22.72 , 40, Salary, 47257.6, 4, Information_Technology, Male, Single, 3.0, 14.0, Mail Check, Yes
+
+52, 10152:
+53, 44, 18, No, $87.00 , 40, Salary, 280960.0, 42, Manufacturing, Prefer Not to Answer, Divorced, 7.0, 13.0, Mailed Check, Yes
+53, 44, 18, No, $87.00 , 40, Salary, 280960.0, 42, Manufacturing, Prefer Not to Answer, Divorced, 7.0, 13.0, Mailed Check, Yes
+
+54, 10154:
+55, 44, 16, No, $31.30 , 40, Salary, -15896.0, -5, Marketing, Male, Divorced, 8.0, 22.0, Mail Check, Yes
+55, 44, 16, No, $31.30 , 40, Salary, -15896.0, -5, Marketing, Male, Divorced, 8.0, 22.0, Mail Check, Yes
+
+55, 10155:
+56, 50, 8, No, $31.30 , 40, Salary, -15896.0, -5, Marketing, Male, Divorced, 5.0, 10.0, Mail Check, Yes
+56, 50, 8, No, $31.30 , 40, Salary, -15896.0, -5, Marketing, Male, Divorced, 5.0, 10.0, Mail Check, Yes
+
+57, 10157:
+58, 33, 5, Yes, $26.33 , 40, Salary, 54766.4, 60, Healthcare, Male, Single, 3.0, 17.0, Mail Check, Yes
+58, 33, 5, Yes, $26.33 , 40, Salary, 54766.4, 60, Healthcare, Male, Single, 3.0, 17.0, Mail Check, Yes
+
+59, 10159:
+60, 48, 17, Yes, $89.35 , 40, Salary, 285848.0, 64, Healthcare, Prefer Not to Answer, Single, 1.0, 6.0, Mail Check, Yes
+60, 48, 17, Yes, $89.35 , 40, Salary, 285848.0, 64, Healthcare, Prefer Not to Answer, Single, 1.0, 6.0, Mail Check, Yes
+
+63, 10163:
+64, 39, 1, No, $26.14 , 40, Salary, 54371.2, 36, Manufacturing, Female, Divorced, 2.0, 11.0, Mail Check, Yes
+64, 39, 1, No, $26.14 , 40, Salary, 54371.2, 36, Manufacturing, Female, Divorced, 2.0, 11.0, Mail Check, Yes
+
+64, 10164:
+65, 30, 3, Yes, $29.49 , 40, Salary, -28660.8, -8, Marketing, Female, Married, 1.0, 19.0, Mail Check, Yes
+65, 30, 3, Yes, $29.49 , 40, Salary, -28660.8, -8, Marketing, Female, Married, 1.0, 19.0, Mail Check, Yes
+
+65, 10165:
+66, 32, 5, Yes, $29.49 , 40, Salary, -28660.8, -8, Marketing, Female, Married, 3.0, 8.0, Mail Check, Yes
+66, 32, 5, Yes, $29.49 , 40, Salary, -28660.8, -8, Marketing, Female, Married, 3.0, 8.0, Mail Check, Yes
+
+66, 10166:
+67, 30, 8, No, $24.74 , 40, Salary, 51459.2, 77, Sales, Male, Divorced, 1.0, 21.0, Mail Check, Yes
+67, 30, 8, No, $24.74 , 40, Salary, 51459.2, 77, Sales, Male, Divorced, 1.0, 21.0, Mail Check, Yes
+
+67, 10167:
+68, 32, 4, No, $24.74 , 40, Salary, 51459.2, 77, Sales, Male, Divorced, 2.0, 8.0, Mail Check, Yes
+68, 32, 4, No, $24.74 , 40, Salary, 51459.2, 77, Sales, Male, Divorced, 2.0, 8.0, Mail Check, Yes
+
+71, 10171:
+72, 57, 5, No, $85.22 , 40, Salary, 177257.6, 33, Laboratory, Prefer Not to Answer, Single, 5.0, 12.0, Mail Check, Yes
+72, 57, 5, No, $85.22 , 40, Salary, 177257.6, 33, Laboratory, Prefer Not to Answer, Single, 5.0, 12.0, Mail Check, Yes
+
+72, 10172:
+73, 28, 6, No, $22.80 , 40, Salary, 47424.0, 24, Research, Female, Divorced, 2.0, 19.0, Mail Check, Yes
+73, 28, 6, No, $22.80 , 40, Salary, 47424.0, 24, Research, Female, Divorced, 2.0, 19.0, Mail Check, Yes
+
+73, 10173:
+74, 28, 1, Yes, $22.80 , 40, Salary, 47424.0, 24, Research, Female, Divorced, 3.0, 18.0, Mail Check, Yes
+74, 28, 1, Yes, $22.80 , 40, Salary, 47424.0, 24, Research, Female, Divorced, 3.0, 18.0, Mail Check, Yes
+
+74, 10174:
+75, 34, 6, No, $28.20 , 40, Salary, 58656.0, 12, Sales, Male, Single, 4.0, 17.0, Direct_Deposit, Yes
+75, 34, 6, No, $28.20 , 40, Salary, 58656.0, 12, Sales, Male, Single, 4.0, 17.0, Direct_Deposit, Yes
+
+75, 10175:
+76, 40, 4, No, $28.20 , 40, Salary, 58656.0, 12, Sales, Male, Single, 5.0, 20.0, Direct_Deposit, Yes
+76, 40, 4, No, $28.20 , 40, Salary, 58656.0, 12, Sales, Male, Single, 5.0, 20.0, Direct_Deposit, Yes
+
+76, 10176:
+77, 30, 7, No, $28.10 , 40, Salary, 58448.0, 2, Sales, Male, Single, 1.0, 12.0, Mail Check, Yes
+77, 30, 7, No, $28.10 , 40, Salary, 58448.0, 2, Sales, Male, Single, 1.0, 12.0, Mail Check, Yes
+
+77, 10177:
+78, 40, 3, Yes, $28.10 , 40, Salary, 58448.0, 2, Sales, Male, Single, 1.0, 22.0, Mail Check, Yes
+78, 40, 3, Yes, $28.10 , 40, Salary, 58448.0, 2, Sales, Male, Single, 1.0, 22.0, Mail Check, Yes
+
+78, 10178:
+79, 34, 9, No, $26.59 , 40, Salary, 55307.2, 67, Information_Technology, Female, Divorced, 2.0, 20.0, Mailed Check, Yes
+79, 34, 9, No, $26.59 , 40, Salary, 55307.2, 67, Information_Technology, Female, Divorced, 2.0, 20.0, Mailed Check, Yes
+
+79, 10179:
+80, 37, 3, No, $26.59 , 40, Salary, 55307.2, 67, Information_Technology, Female, Divorced, 3.0, 6.0, Mailed Check, Yes
+80, 37, 3, No, $26.59 , 40, Salary, 55307.2, 67, Information_Technology, Female, Divorced, 3.0, 6.0, Mailed Check, Yes
+
+82, 10182:
+83, 50, 10, No, $88.27 , 40, Salary, 283601.6, 60, Research, Male, Married, 3.0, 12.0, DirectDeposit, Yes
+83, 50, 10, No, $88.27 , 40, Salary, 283601.6, 60, Research, Male, Married, 3.0, 12.0, DirectDeposit, Yes
+
+83, 10183:
+84, 54, 17, No, $88.27 , 40, Salary, 283601.6, 60, Research, Male, Married, 6.0, 16.0, DirectDeposit, Yes
+84, 54, 17, No, $88.27 , 40, Salary, 283601.6, 60, Research, Male, Married, 6.0, 16.0, DirectDeposit, Yes
+
+84, 10184:
+85, 53, 18, Yes, $31.39 , 40, Salary, 65291.2, 62, Information_Technology, Female, Divorced, 2.0, 25.0, Mail Check, Yes
+85, 53, 18, Yes, $31.39 , 40, Salary, 65291.2, 62, Information_Technology, Female, Divorced, 2.0, 25.0, Mail Check, Yes
+
+85, 10185:
+86, 57, 14, Yes, $31.39 , 40, Salary, 65291.2, 62, Information_Technology, Female, Divorced, 9.0, 18.0, Mail Check, Yes
+86, 57, 14, Yes, $31.39 , 40, Salary, 65291.2, 62, Information_Technology, Female, Divorced, 9.0, 18.0, Mail Check, Yes
+
+86, 10186:
+87, 39, 7, Yes, $31.39 , 40, Salary, 65291.2, 47, Information_Technology, Female, Divorced, 4.0, 6.0, Mail Check, Yes
+87, 39, 7, Yes, $31.39 , 40, Salary, 65291.2, 47, Information_Technology, Female, Divorced, 4.0, 6.0, Mail Check, Yes
+
+88, 10188:
+89, 31, 9, No, $28.73 , 40, Salary, 59758.4, 28, Laboratory, Female, Married, 1.0, 25.0, Mail Check, Yes
+89, 31, 9, No, $28.73 , 40, Salary, 59758.4, 28, Laboratory, Female, Married, 1.0, 25.0, Mail Check, Yes
+
+89, 10189:
+90, 40, 1, No, $28.73 , 40, Salary, 59758.4, 28, Laboratory, Female, Married, 6.0, 10.0, Mail Check, Yes
+90, 40, 1, No, $28.73 , 40, Salary, 59758.4, 28, Laboratory, Female, Married, 6.0, 10.0, Mail Check, Yes
+
+90, 10190:
+91, 36, 9, No, $28.73 , 40, Salary, 59758.4, -7, Laboratory, Female, Married, 3.0, 11.0, Mail Check, Yes
+91, 36, 9, No, $28.73 , 40, Salary, 59758.4, -7, Laboratory, Female, Married, 3.0, 11.0, Mail Check, Yes
+
+91, 10191:
+92, 39, 4, No, $28.73 , 40, Salary, 59758.4, -7, Laboratory, Female, Married, 6.0, 18.0, Mail Check, Yes
+92, 39, 4, No, $28.73 , 40, Salary, 59758.4, -7, Laboratory, Female, Married, 6.0, 18.0, Mail Check, Yes
+
+92, 10192:
+93, 44, 8, Yes, $48.45 , 40, Salary, 100776.0, 76, Marketing, Female, Married, 5.0, 12.0, Mail Check, Yes
+93, 44, 8, Yes, $48.45 , 40, Salary, 100776.0, 76, Marketing, Female, Married, 5.0, 12.0, Mail Check, Yes
+
+95, 10195:
+96, 54, 17, No, $85.40 , 40, Salary, 177632.0, 31, Research, Male, Single, 2.0, 25.0, Mail Check, Yes
+96, 54, 17, No, $85.40 , 40, Salary, 177632.0, 31, Research, Male, Single, 2.0, 25.0, Mail Check, Yes
+
+97, 10197:
+98, 58, 19, No, $71.90 , 40, Salary, 149552.0, 32, Marketing, Male, Married, 5.0, 23.0, Mail Check, Yes
+98, 58, 19, No, $71.90 , 40, Salary, 149552.0, 32, Marketing, Male, Married, 5.0, 23.0, Mail Check, Yes
+
+98, 10198:
+99, 48, 17, Yes, $71.33 , 40, Salary, 148075.2, 50, Sales, Prefer Not to Answer, Married, 8.0, 8.0, Mail Check, Yes
+99, 48, 17, Yes, $71.33 , 40, Salary, 148075.2, 50, Sales, Prefer Not to Answer, Married, 8.0, 8.0, Mail Check, Yes
+
+Total duplicate rows: 70
+
+Duplicate values in Turnover:
+Value: 'no', Count: 5509
+Value: 'yes', Count: 4690
+
+Duplicate values in CompensationType:
+Value: 'salary', Count: 10199
+
+Duplicate values in JobRoleArea:
+Value: 'research', Count: 2025
+Value: 'sales', Count: 2007
+Value: 'marketing', Count: 1105
+Value: 'manufacturing', Count: 1039
+Value: 'laboratory', Count: 1021
+Value: 'healthcare', Count: 1008
+Value: 'human resources', Count: 1001
+Value: 'information technology', Count: 993
+
+Duplicate values in Gender:
+Value: 'female', Count: 5812
+Value: 'male', Count: 4232
+Value: 'prefer not to answer', Count: 155
+
+Duplicate values in MaritalStatus:
+Value: 'married', Count: 3439
+Value: 'single', Count: 3422
+Value: 'divorced', Count: 3338
+
+Duplicate values in PaycheckMethod:
+Value: 'mail check', Count: 5533
+Value: 'mailed check', Count: 2490
+Value: 'direct deposit', Count: 2176
+
+Duplicate values in TextMessageOptIn:
+Value: 'yes', Count: 7390
+Value: 'nan', Count: 2266
+Value: 'no', Count: 543

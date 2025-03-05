@@ -1,0 +1,324 @@
+2025-02-28 07:45:09 - INFO - Logging initialized. Log file: logs/data_cleaning_20250228_074509.log
+2025-02-28 07:45:09 - INFO - Starting data cleaning process
+2025-02-28 07:45:09 - INFO - Attempting to load data from: Employee Turnover Dataset.csv
+2025-02-28 07:45:09 - INFO - Successfully loaded data with shape: (10199, 16)
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: initial ---
+2025-02-28 07:45:09 - INFO - Shape: (10199, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate ', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 4900 (3.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate : object
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover HourlyRate   HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes     $24.37            40           Salary  ...     Research  Female       Married                          3.0                      7.0      Mail Check               Yes
+1               2   33       2      Yes     $24.37            40           Salary  ...     Research  Female       Married                          6.0                      7.0      Mail Check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Starting data cleaning operations
+2025-02-28 07:45:09 - INFO - Fixed column spacing. Changes: 'HourlyRate ' -> 'HourlyRate'
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_column_spacing ---
+2025-02-28 07:45:09 - INFO - Shape: (10199, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 4900 (3.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: object
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes    $24.37            40           Salary  ...     Research  Female       Married                          3.0                      7.0      Mail Check               Yes
+1               2   33       2      Yes    $24.37            40           Salary  ...     Research  Female       Married                          6.0                      7.0      Mail Check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Checking for duplicates. Initial row count: 10199
+2025-02-28 07:45:09 - INFO - Removed 99 duplicate rows. New row count: 10100
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_duplicate_removal ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 4868 (3.01%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: object
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes    $24.37            40           Salary  ...     Research  Female       Married                          3.0                      7.0      Mail Check               Yes
+1               2   33       2      Yes    $24.37            40           Salary  ...     Research  Female       Married                          6.0                      7.0      Mail Check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Handling missing values
+2025-02-28 07:45:09 - INFO - Missing values by column before filling:
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: 663 values (6.56%)
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: 1947 values (19.28%)
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: 2258 values (22.36%)
+2025-02-28 07:45:09 - INFO -   Filled missing values in 'NumCompaniesPreviouslyWorked' with median: 4.0
+2025-02-28 07:45:09 - INFO -   Filled missing values in 'AnnualProfessionalDevHrs' with median: 15.0
+2025-02-28 07:45:09 - INFO -   Filled missing values in 'TextMessageOptIn' with 'Unknown'
+2025-02-28 07:45:09 - INFO - Missing values after filling: 0
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_missing_values ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: object
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes    $24.37            40           Salary  ...     Research  Female       Married                          3.0                      7.0      Mail Check               Yes
+1               2   33       2      Yes    $24.37            40           Salary  ...     Research  Female       Married                          6.0                      7.0      Mail Check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Saved a copy of the dataframe after basic cleaning
+2025-02-28 07:45:09 - INFO - Formatting HourlyRate column
+2025-02-28 07:45:09 - INFO - Sample HourlyRate values before: ['$24.37 ', '$24.37 ', '$22.52 ']
+2025-02-28 07:45:09 - INFO - Sample HourlyRate values after: [24.37, 24.37, 22.52]
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_hourly_rate_format ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: float64
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover  HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes       24.37           40           Salary  ...     Research  Female       Married                          3.0                      7.0      Mail Check               Yes
+1               2   33       2      Yes       24.37           40           Salary  ...     Research  Female       Married                          6.0                      7.0      Mail Check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Normalizing categorical columns: ['JobRoleArea', 'PaycheckMethod']
+2025-02-28 07:45:09 - INFO - Column 'JobRoleArea': unique values reduced from 12 to 8
+2025-02-28 07:45:09 - INFO - Value normalization examples for 'JobRoleArea':
+2025-02-28 07:45:09 - INFO -   'Research' -> 'research'
+2025-02-28 07:45:09 - INFO -   'Information_Technology' -> 'information technology'
+2025-02-28 07:45:09 - INFO -   'Sales' -> 'sales'
+2025-02-28 07:45:09 - INFO -   'Human_Resources' -> 'human resources'
+2025-02-28 07:45:09 - INFO -   'Laboratory' -> 'laboratory'
+2025-02-28 07:45:09 - INFO -   'Manufacturing' -> 'manufacturing'
+2025-02-28 07:45:09 - INFO -   'Healthcare' -> 'healthcare'
+2025-02-28 07:45:09 - INFO -   'Marketing' -> 'marketing'
+2025-02-28 07:45:09 - INFO -   'InformationTechnology' -> 'information technology'
+2025-02-28 07:45:09 - INFO -   'HumanResources' -> 'human resources'
+2025-02-28 07:45:09 - INFO -   'Information Technology' -> 'information technology'
+2025-02-28 07:45:09 - INFO -   'Human Resources' -> 'human resources'
+2025-02-28 07:45:09 - INFO - Column 'PaycheckMethod': unique values reduced from 7 to 3
+2025-02-28 07:45:09 - INFO - Value normalization examples for 'PaycheckMethod':
+2025-02-28 07:45:09 - INFO -   'Mail Check' -> 'mail check'
+2025-02-28 07:45:09 - INFO -   'Mailed Check' -> 'mailed check'
+2025-02-28 07:45:09 - INFO -   'Direct_Deposit' -> 'direct deposit'
+2025-02-28 07:45:09 - INFO -   'DirectDeposit' -> 'direct deposit'
+2025-02-28 07:45:09 - INFO -   'Direct Deposit' -> 'direct deposit'
+2025-02-28 07:45:09 - INFO -   'Mail_Check' -> 'mail check'
+2025-02-28 07:45:09 - INFO -   'MailedCheck' -> 'mailed check'
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_categorical_normalization ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: float64
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover  HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes       24.37           40           Salary  ...     research  Female       Married                          3.0                      7.0      mail check               Yes
+1               2   33       2      Yes       24.37           40           Salary  ...     research  Female       Married                          6.0                      7.0      mail check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Fixing numerical columns: ['NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs']
+2025-02-28 07:45:09 - INFO - Sample 'NumCompaniesPreviouslyWorked' values before: [3.0, 6.0, 1.0]
+2025-02-28 07:45:09 - INFO - Sample 'NumCompaniesPreviouslyWorked' values after: [3.0, 6.0, 1.0]
+2025-02-28 07:45:09 - INFO - Sample 'AnnualProfessionalDevHrs' values before: [7.0, 7.0, 8.0]
+2025-02-28 07:45:09 - INFO - Sample 'AnnualProfessionalDevHrs' values after: [7.0, 7.0, 8.0]
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_numerical_fixing ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: float64
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover  HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes       24.37           40           Salary  ...     research  Female       Married                          3.0                      7.0      mail check               Yes
+1               2   33       2      Yes       24.37           40           Salary  ...     research  Female       Married                          6.0                      7.0      mail check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Fixing negative values in columns: ['AnnualSalary', 'DrivingCommuterDistance']
+2025-02-28 07:45:09 - INFO - Found 53 negative values in 'AnnualSalary'
+2025-02-28 07:45:09 - INFO - Sample negative values in 'AnnualSalary': [-15896.0, -15896.0, -28660.8]
+2025-02-28 07:45:09 - INFO - Converted 53 negative values to positive in 'AnnualSalary'
+2025-02-28 07:45:09 - INFO - Found 1343 negative values in 'DrivingCommuterDistance'
+2025-02-28 07:45:09 - INFO - Sample negative values in 'DrivingCommuterDistance': [-4, -4, -5]
+2025-02-28 07:45:09 - INFO - Converted 1343 negative values to positive in 'DrivingCommuterDistance'
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_negative_fixing ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: float64
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: int64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover  HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes       24.37           40           Salary  ...     research  Female       Married                          3.0                      7.0      mail check               Yes
+1               2   33       2      Yes       24.37           40           Salary  ...     research  Female       Married                          6.0                      7.0      mail check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:09 - INFO - -----------------------------------
+2025-02-28 07:45:09 - INFO - Detecting and handling outliers in: ['AnnualSalary', 'DrivingCommuterDistance']
+2025-02-28 07:45:09 - INFO - Column 'AnnualSalary' outlier thresholds: lower=-71975.80, upper=289133.00
+2025-02-28 07:45:09 - INFO - Found 571 outliers in 'AnnualSalary' (0 below, 571 above)
+2025-02-28 07:45:09 - INFO - Sample high outliers: [331048.0, 331048.0, 337475.2]
+2025-02-28 07:45:09 - INFO - Capped 571 outliers in 'AnnualSalary'
+2025-02-28 07:45:09 - INFO - Column 'DrivingCommuterDistance' outlier thresholds: lower=-69.00, upper=155.00
+2025-02-28 07:45:09 - INFO - Found 222 outliers in 'DrivingCommuterDistance' (0 below, 222 above)
+2025-02-28 07:45:09 - INFO - Sample high outliers: [910, 910, 910]
+2025-02-28 07:45:09 - INFO - Capped 222 outliers in 'DrivingCommuterDistance'
+2025-02-28 07:45:09 - INFO - --- DataFrame Statistics at stage: after_outlier_handling ---
+2025-02-28 07:45:09 - INFO - Shape: (10100, 16) (rows, columns)
+2025-02-28 07:45:09 - INFO - Columns: ['EmployeeNumber', 'Age', 'Tenure', 'Turnover', 'HourlyRate', 'HoursWeekly', 'CompensationType', 'AnnualSalary', 'DrivingCommuterDistance', 'JobRoleArea', 'Gender', 'MaritalStatus', 'NumCompaniesPreviouslyWorked', 'AnnualProfessionalDevHrs', 'PaycheckMethod', 'TextMessageOptIn']
+2025-02-28 07:45:09 - INFO - Missing values: 0 (0.00%)
+2025-02-28 07:45:09 - INFO - Data types:
+2025-02-28 07:45:09 - INFO -   EmployeeNumber: int64
+2025-02-28 07:45:09 - INFO -   Age: int64
+2025-02-28 07:45:09 - INFO -   Tenure: int64
+2025-02-28 07:45:09 - INFO -   Turnover: object
+2025-02-28 07:45:09 - INFO -   HourlyRate: float64
+2025-02-28 07:45:09 - INFO -   HoursWeekly: int64
+2025-02-28 07:45:09 - INFO -   CompensationType: object
+2025-02-28 07:45:09 - INFO -   AnnualSalary: float64
+2025-02-28 07:45:09 - INFO -   DrivingCommuterDistance: float64
+2025-02-28 07:45:09 - INFO -   JobRoleArea: object
+2025-02-28 07:45:09 - INFO -   Gender: object
+2025-02-28 07:45:09 - INFO -   MaritalStatus: object
+2025-02-28 07:45:09 - INFO -   NumCompaniesPreviouslyWorked: float64
+2025-02-28 07:45:09 - INFO -   AnnualProfessionalDevHrs: float64
+2025-02-28 07:45:09 - INFO -   PaycheckMethod: object
+2025-02-28 07:45:09 - INFO -   TextMessageOptIn: object
+2025-02-28 07:45:09 - INFO - Sample data (first 2 rows):
+   EmployeeNumber  Age  Tenure Turnover  HourlyRate  HoursWeekly CompensationType  ...  JobRoleArea  Gender MaritalStatus NumCompaniesPreviouslyWorked AnnualProfessionalDevHrs  PaycheckMethod  TextMessageOptIn
+0               1   28       6      Yes       24.37           40           Salary  ...     research  Female       Married                          3.0                      7.0      mail check               Yes
+1               2   33       2      Yes       24.37           40           Salary  ...     research  Female       Married                          6.0                      7.0      mail check               Yes
+
+[2 rows x 16 columns]
+2025-02-28 07:45:10 - INFO - -----------------------------------
+2025-02-28 07:45:10 - INFO - Saving cleaned data to Cleaned_Employee_Turnover.csv
+2025-02-28 07:45:10 - INFO - Successfully saved cleaned dataset to Cleaned_Employee_Turnover.csv
+2025-02-28 07:45:10 - INFO - --- Data Cleaning Complete ---
+2025-02-28 07:45:10 - INFO - Initial shape: (10100, 16)
+2025-02-28 07:45:10 - INFO - Final shape: (10100, 16)
+2025-02-28 07:45:10 - INFO - Log file created: logs/data_cleaning_20250228_074509.log
